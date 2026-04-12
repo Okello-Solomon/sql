@@ -29,7 +29,7 @@ Columns (fields): Each column represents a specific attribute of the data
 
 Tables help structure data in a way that makes it easy to query and analyze.
 
-3. CRUD Operations
+# 3. CRUD Operations
 
 CRUD represents the four basic operations performed on data:
 
@@ -40,13 +40,13 @@ Delete: Removing data
 
 These operations form the foundation of how applications interact with databases.
 
-4. Filtering Data
+# 4. Filtering Data
 
 Filtering allows you to retrieve only the data that meets specific conditions.
 
 This is important when working with large datasets, as it helps focus only on relevant information instead of viewing everything.
 
-5. Operators in SQL
+# 5. Operators in SQL
 
 Operators are used to define conditions when working with data:
 
@@ -56,13 +56,13 @@ Pattern matching helps search for specific text patterns
 
 These make queries more flexible and powerful.
 
-6. Sorting & Limiting Data
+# 6. Sorting & Limiting Data
 Sorting arranges data in a specific order (ascending or descending)
 Limiting restricts the number of results returned
 
 These are useful when analyzing or displaying only the most important data.
 
-7. Aggregate Functions
+# 7. Aggregate Functions
 
 Aggregate functions perform calculations on multiple rows of data and return a single result.
 
@@ -75,7 +75,7 @@ Identifying minimum or maximum values
 
 They are widely used in reporting and data analysis.
 
-8. Grouping Data
+# 8. Grouping Data
 
 Grouping organizes data into categories based on shared values.
 
@@ -86,7 +86,7 @@ Comparing performance across groups
 
 Filtering can also be applied after grouping to refine results further.
 
-9. Joins in SQL
+# 9. Joins in SQL
 
 Joins are used to combine data from multiple tables.
 
@@ -98,7 +98,7 @@ Avoid data duplication
 
 Different types of joins determine how data is matched between tables.
 
-10. Keys & Constraints
+# 10. Keys & Constraints
 
 Keys and constraints ensure data integrity and consistency:
 
