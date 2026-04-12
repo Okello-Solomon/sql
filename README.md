@@ -297,7 +297,7 @@ Joins combine data from multiple tables.
   
 Returns only rows that have matching values in both tables.
 - LEFT JOIN
-- 
+-  
 Returns all rows from the left table, even if there is no matching value in the right table.
 - RIGHT JOIN
   
