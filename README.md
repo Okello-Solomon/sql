@@ -157,10 +157,10 @@ Acts as a container that holds multiple related tables.
 A structured set of data organized into rows and columns.
 Each table represents a specific subject (e.g., customers, orders).
 
-##Row (Record)
+## Row (Record)
 A single entry in a table representing one instance of data.
 
-##Column (Field)
+## Column (Field)
 A specific attribute of the data (e.g., name, price, date).
 
 ## Operators
