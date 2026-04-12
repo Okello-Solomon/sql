@@ -16,16 +16,19 @@ SQL is mainly used with relational databases, where data is organized into struc
 <summary><strong> View Project Details</strong></summary>
   
 # 2. Database & Tables
-What is a Database?
+**What is a Database?**
 
 A database is an organized collection of data stored electronically for easy access, management, and updating.
 
-What is a Table?
+**What is a Table?**
 
 A table is where data is stored in a database. It is made up of:
 
-Rows (records): Each row represents a single entry
-Columns (fields): Each column represents a specific attribute of the data
+**Rows (records):** Each row represents a single entry
+
+**Columns (fields):** 
+
+Each column represents a specific attribute of the data
 
 Tables help structure data in a way that makes it easy to query and analyze.
 
