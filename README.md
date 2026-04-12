@@ -110,7 +110,7 @@ DEFAULT: Assigns a value automatically if none is provided
 
 These rules help maintain accurate and reliable data.
 
-11. Creating & Managing Tables
+# 11. Creating & Managing Tables
 
 Databases allow you to:
 
@@ -120,7 +120,7 @@ Delete tables when no longer needed
 
 Proper table design is important for efficient data storage and retrieval.
 
-12. Subqueries
+# 12. Subqueries
 
 A subquery is a query inside another query.
 
