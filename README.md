@@ -41,12 +41,15 @@ CRUD represents the four basic operations performed on data:
 1. Create:
   
 Adding new data into the database
+
 2. Read:
 
 Retrieving existing data
+
 3. Update:
 
 Modifying existing data
+
 4. Delete:
 
 Removing data
