@@ -230,24 +230,23 @@ Ensures that all values in a column are different, while still allowing the colu
 
 Constraints are rules applied to columns to keep the data accurate and consistent.
 
-- NOT NULL
-  
+- NOT NULL  
 Ensures that a column must always contain a value.
+
 - UNIQUE
-  
 Prevents duplicate values in a column.
+
 - PRIMARY KEY
-  
 Combines both uniqueness and the requirement that the value cannot be empty.
+
 - FOREIGN KEY
-  
 Ensures that the value exists in another related table.
+
 - CHECK
-  
 Restricts the values allowed in a column.
 For example, age cannot be less than zero.
+
 - DEFAULT
-  
 Automatically assigns a value if none is provided.
 
 ## Views
