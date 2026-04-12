@@ -1,4 +1,4 @@
-<span style="color:blue"># SQL</span>
+# SQL
 
 **1. Definition**
 
