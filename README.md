@@ -129,5 +129,4 @@ It allows you to:
 Break complex problems into smaller parts
 Perform calculations first before applying conditions
 Make queries more dynamic and flexible
-
 <details>
