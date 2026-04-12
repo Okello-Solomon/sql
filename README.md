@@ -24,7 +24,9 @@ A database is an organized collection of data stored electronically for easy acc
 
 A table is where data is stored in a database. It is made up of:
 
-**Rows (records):** Each row represents a single entry
+**Rows (records):** 
+
+Each row represents a single entry
 
 **Columns (fields):** 
 
