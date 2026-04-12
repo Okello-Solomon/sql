@@ -38,10 +38,18 @@ Tables help structure data in a way that makes it easy to query and analyze.
 
 CRUD represents the four basic operations performed on data:
 
-Create: Adding new data into the database
-Read: Retrieving existing data
-Update: Modifying existing data
-Delete: Removing data
+1. Create:
+  
+Adding new data into the database
+2. Read:
+
+Retrieving existing data
+3. Update:
+
+Modifying existing data
+4. Delete:
+
+Removing data
 
 These operations form the foundation of how applications interact with databases.
 
