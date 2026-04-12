@@ -1,4 +1,4 @@
-# SQL 
+<span style="color:blue"># SQL</span>
 **1. Definition**
 
 SQL (Structured Query Language) is a language used to interact with databases. It allows users to store, retrieve, modify, and manage data efficiently.
