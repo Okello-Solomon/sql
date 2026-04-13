@@ -465,7 +465,7 @@ Useful for long descriptions, comments, or logs.
    
 Legacy data type for large text.
 
-Avoid in modern systems — use VARCHAR(MAX) instead.
+Avoid in modern system, use VARCHAR(MAX) instead.
 
 **Best Practice:**
 
@@ -475,10 +475,8 @@ Use VARCHAR instead of CHAR unless the length is always fixed.
 
 Used for storing time-related data.
 
-1.DATE
-
+1. DATE
 Stores only the date (year, month, day).
-
 Useful for birthdays, order dates, and any data where time is not required.
 
 2. TIME
@@ -529,7 +527,7 @@ Uses only the space required, making it more storage-efficient than BINARY.
 Stores very large binary data (up to ~2GB), such as images, videos, or documents (e.g., PDFs).
 
 **Note:**
-Storing large files in databases can affect performance — sometimes better stored externally.
+Storing large files in databases can affect performance sometimes better stored externally.
 
 ## 5. Other Important Data Types
 1. BIT
