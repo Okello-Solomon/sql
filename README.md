@@ -248,7 +248,7 @@ Constraints are rules applied to columns to keep the data accurate and consisten
 
 - NOT NULL
 
-  Ensures that a column must always contain a value.
+Ensures that a column must always contain a value.
 
 - UNIQUE
   
