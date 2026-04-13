@@ -384,4 +384,225 @@ For example, automatically updating a log when new data is inserted.
   
 The process of organizing data to reduce redundancy and improve efficiency.
 Helps avoid duplicate data and ensures better database design.
+
+# Data Types in SQL
+
+**What Are Data Types?**
+
+Data types define the kind of data that can be stored in a column.
+
+Choosing the correct data type is important because it:
+
+- Improves performance
+- Saves storage space
+- Ensures data accuracy
+- Prevents errors during data entry and analysis
+  
+## 1. Numeric Data Types
+
+Used for storing numbers.
+
+1. INT
+   
+Stores whole numbers within a standard range.
+
+Commonly used for IDs, counts, and quantities.
+
+2. BIGINT
+   
+Stores very large whole numbers.
+
+Used in large-scale systems (e.g., millions of records).
+
+3. SMALLINT
+   
+Stores smaller integers.
+
+More storage-efficient when large values are unnecessary.
+
+4. DECIMAL / NUMERIC (precision, scale)
+   
+Stores exact numbers with fixed decimal places.
+
+Best for financial data where accuracy is critical (e.g., prices, salaries).
+
+**Example idea:**
+
+Precision = total digits, Scale = digits after decimal.
+
+5. FLOAT / REAL
+ 
+Stores approximate decimal values.
+
+Used in scientific or statistical calculations where slight rounding is acceptable.
+
+
+## 2. Character / String Data Types
+
+Used for storing text.
+
+1. CHAR(n)
+   
+Fixed-length string.
+
+Always uses the same space, even if the text is shorter.
+
+Best for consistent values (e.g., country codes).
+
+3. VARCHAR(n)
+   
+Variable-length string.
+
+Stores only the actual text length and is most commonly used for names, emails, etc.
+
+4. VARCHAR(MAX)
+   
+Stores very large text (up to ~2GB).
+
+Useful for long descriptions, comments, or logs.
+
+5. TEXT
+   
+Legacy data type for large text.
+
+Avoid in modern systems — use VARCHAR(MAX) instead.
+
+**Best Practice:**
+
+Use VARCHAR instead of CHAR unless the length is always fixed.
+
+## 3.Date and Time Data Types
+
+Used for storing time-related data.
+
+1.DATE
+
+Stores only the date (year, month, day).
+
+Useful for birthdays, order dates, and any data where time is not required.
+
+2. TIME
+   
+Stores only time (hours, minutes, seconds).
+
+Useful for scheduling, time tracking, or recording specific times of events.
+
+4. DATETIME
+   
+Stores both date and time.
+
+Widely used in many systems but has lower precision compared to newer types.
+
+6. DATETIME2
+   
+More accurate and flexible than DATETIME, with a wider range and higher precision.
+
+Recommended for modern systems and applications that require detailed timestamps.
+
+8. SMALLDATETIME
+   
+Stores date and time but with less precision (rounded to the nearest minute).
+
+Uses less storage, making it useful when high precision is not necessary
+
+**Best Practice:**
+Use DATETIME2 instead of DATETIME for better precision and range.
+
+## 4. Binary Data Types
+
+Used for storing non-text data such as files, images, or encoded data.
+
+1. BINARY(n)
+
+Stores fixed-length binary data.
+
+Always uses the specified amount of storage, even if the data is smaller.
+
+2. VARBINARY(n)
+   
+Stores variable-length binary data up to a defined limit.
+
+Uses only the space required, making it more storage-efficient than BINARY.
+
+4. VARBINARY(MAX)
+   
+Stores very large binary data (up to ~2GB), such as images, videos, or documents (e.g., PDFs).
+
+**Note:**
+Storing large files in databases can affect performance — sometimes better stored externally.
+
+## 5. Other Important Data Types
+1. BIT
+
+Stores boolean-like values:
+
+1 → True
+
+0 → False
+
+Also allows NULL (unknown or not specified).
+
+Commonly used for status flags (e.g., active/inactive), yes/no fields, or binary conditions.
+
+2. UNIQUEIDENTIFIER
+
+Stores globally unique IDs (GUIDs).
+
+Each value is automatically unique across systems, making it very reliable.
+
+Useful in distributed systems, APIs, or when merging data from multiple databases where duplicate IDs must be avoided.
+
+3. SQL_VARIANT
+
+Can store multiple data types in one column.
+
+Allows flexibility when the data type may vary (e.g., storing numbers, text, or dates in the same column).
+
+Rarely used due to complexity, difficulty in querying, and performance considerations.
+
+4. XML
+
+Stores structured XML data.
+
+Supports hierarchical and nested data formats.
+
+Useful for storing and exchanging structured data between systems, especially in enterprise applications.
+
+5. JSON (via NVARCHAR)
+
+SQL Server stores JSON as text but provides functions to work with it.
+
+Allows storage of semi-structured data (key-value pairs).
+
+Useful for APIs, web applications, and flexible data structures where the schema may change.
+
+### Data Type Selection Tips (Very Important)
+
+Always choose the smallest suitable data type
+
+- Saves storage space
+- Improves query performance
+- Reduces memory usage
+- Enhances overall database efficiency
+
+Choosing the right data type also helps prevent errors and ensures your data remains accurate and consistent.
+
+### Use:
+
+- INT instead of BIGINT (if possible)
+- VARCHAR instead of CHAR (for variable text)
+- DECIMAL instead of FLOAT (for money)
+
+**Real-World Example (Conceptual Table)**
+
+A typical dataset might include:
+
+- StudentID → INT
+- Name → VARCHAR
+- Age → INT
+- GPA → DECIMAL
+- DateOfBirth → DATE
+- IsActive → BIT
+
+**This mix allows efficient storage and accurate analysis.**
 </details>
