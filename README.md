@@ -402,25 +402,25 @@ Choosing the correct data type is important because it:
 
 Used for storing numbers.
 
-1. INT
+1. **INT**
    
 Stores whole numbers within a standard range.
 
 Commonly used for IDs, counts, and quantities.
 
-2. BIGINT
+2. **BIGINT**
    
 Stores very large whole numbers.
 
 Used in large-scale systems (e.g., millions of records).
 
-3. SMALLINT
+3. **SMALLINT**
    
 Stores smaller integers.
 
 More storage-efficient when large values are unnecessary.
 
-4. DECIMAL / NUMERIC (precision, scale)
+4. **DECIMAL / NUMERIC (precision, scale)**
    
 Stores exact numbers with fixed decimal places.
 
@@ -430,7 +430,7 @@ Best for financial data where accuracy is critical (e.g., prices, salaries).
 
 Precision = total digits, Scale = digits after decimal.
 
-5. FLOAT / REAL
+5. **FLOAT / REAL**
  
 Stores approximate decimal values.
 
@@ -441,7 +441,7 @@ Used in scientific or statistical calculations where slight rounding is acceptab
 
 Used for storing text.
 
-1. CHAR(n)
+1. **CHAR(n)**
    
 Fixed-length string.
 
@@ -449,19 +449,19 @@ Always uses the same space, even if the text is shorter.
 
 Best for consistent values (e.g., country codes).
 
-3. VARCHAR(n)
+3. **VARCHAR(n)**
    
 Variable-length string.
 
 Stores only the actual text length and is most commonly used for names, emails, etc.
 
-4. VARCHAR(MAX)
+4. **VARCHAR(MAX)**
    
 Stores very large text (up to ~2GB).
 
 Useful for long descriptions, comments, or logs.
 
-5. TEXT
+5. **TEXT**
    
 Legacy data type for large text.
 
@@ -475,29 +475,31 @@ Use VARCHAR instead of CHAR unless the length is always fixed.
 
 Used for storing time-related data.
 
-1. DATE
+1. **DATE**
+   
 Stores only the date (year, month, day).
+
 Useful for birthdays, order dates, and any data where time is not required.
 
-2. TIME
+3. **TIME**
    
 Stores only time (hours, minutes, seconds).
 
 Useful for scheduling, time tracking, or recording specific times of events.
 
-4. DATETIME
+4. **DATETIME**
    
 Stores both date and time.
 
 Widely used in many systems but has lower precision compared to newer types.
 
-6. DATETIME2
+5. **DATETIME2**
    
 More accurate and flexible than DATETIME, with a wider range and higher precision.
 
 Recommended for modern systems and applications that require detailed timestamps.
 
-8. SMALLDATETIME
+6. **SMALLDATETIME**
    
 Stores date and time but with less precision (rounded to the nearest minute).
 
@@ -510,19 +512,19 @@ Use DATETIME2 instead of DATETIME for better precision and range.
 
 Used for storing non-text data such as files, images, or encoded data.
 
-1. BINARY(n)
+1. **BINARY(n)**
 
 Stores fixed-length binary data.
 
 Always uses the specified amount of storage, even if the data is smaller.
 
-2. VARBINARY(n)
+2. **VARBINARY(n)**
    
 Stores variable-length binary data up to a defined limit.
 
 Uses only the space required, making it more storage-efficient than BINARY.
 
-4. VARBINARY(MAX)
+4. **VARBINARY(MAX)**
    
 Stores very large binary data (up to ~2GB), such as images, videos, or documents (e.g., PDFs).
 
